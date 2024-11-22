@@ -22,18 +22,22 @@ body {
   padding: 0 auto;
   box-sizing: border-box;
   font-family: "Outfit";
+  overflow-x: hidden;
 }
-
 
 section {
   padding: 0 25px;
 }
 
+div.image-container {
+  width: 100%;
+}
 
-.omelette-image {
+div.image-container .omelette-image {
   height: auto;
-  max-width: 100%;
+  width: 120%;
   position: relative;
+  left: -10%;
   margin: auto;
 }
 

@@ -1,21 +1,3 @@
-@media only screen and (max-width: 375px) {
-
-  /* Your mobile-specific styles go here */
-  img {
-    width: 100%;
-  }
-}
-
-@media only screen and (max-width: 1440px) {
-
-  /* Your desktop-specific styles go here */
-  img {
-    max-width: 100%;
-    border-radius: 10px;
-  }
-}
-
-
 body {
   margin: 0 auto;
   padding: 0 auto;
@@ -159,6 +141,24 @@ table {
   font-weight: bold;
   font-family: "Outfit";
   margin-left: 100px;
+}
+
+
+@media only screen and (max-width: 375px) {
+
+  /* Your mobile-specific styles go here */
+  img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+
+  /* Your desktop-specific styles go here */
+  img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
 }
 
 /* .attribution {

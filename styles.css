@@ -157,7 +157,8 @@ table {
   /* Your desktop-specific styles go here */
   img {
     max-width: 100%;
-    border-radius: 10px;
+    border-top-left-radius: 0;
+     border-top-right-radius: 0;
   }
 }
 

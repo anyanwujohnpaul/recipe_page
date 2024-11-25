@@ -1,47 +1,45 @@
-@media (max-width: 375px) {
+@media only screen and (max-width: 375px) {
 
   /* Your mobile-specific styles go here */
-  .omelette-image {
+  img {
     position: relative;
     max-width: 100%;
   }
 }
 
-@media (max-width: 1440px) {
+@media only screen and (max-width: 1440px) {
 
   /* Your desktop-specific styles go here */
-  /* .omelette-image {
+  img {
     position: relative;
     max-width: 100%;
-    border-radius: 50px;
-  } */
+    border-radius: 20px;
+    margin: 0 30px;
+  }
 }
+
 
 body {
   margin: 0 auto;
   padding: 0 auto;
   box-sizing: border-box;
-  font-family: "Outfit";
   overflow-x: hidden;
 }
 
 section {
-  padding: 0 25px;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
-div.image-container {
-  width: 100%;
+img {
+  max-width: 100%;
 }
 
-div.image-container .omelette-image {
-  height: auto;
-  width: 120%;
-  position: relative;
-  left: -10%;
-  margin: auto;
-}
 
-.simple-omelette {
+.simple-omelette,
+.ingredients,
+.instructions,
+.nutrition {
   font-family: "Young serif";
 }
 
@@ -51,36 +49,51 @@ span {
   font-family: "Outfit";
 }
 
+
+.ingredients,
+.instructions,
+.nutrition {
+  color: brown;
+}
+
+
+.simple-omelette-text {
+  font-family: "Outfit";
+  color: hsl(30, 10%, 34%);
+}
+
+.nutrition-text {
+  font-family: "Outfit";
+  color: hsl(30, 10%, 34%);
+}
+
 .simple-omelette-container,
 .preparation-time-container,
 .ingredients-container,
 .instruction-container,
 .nutrition-container {
-  margin: 0 25px;
+  margin: 0 30px;
   padding: 10px 0;
 }
 
 
-
-/* .simple-omelette {
-  margin-bottom: 20px;
-  margin-top: 20px;
-} */
-
+.simple-omelette {
+  font-family: "Young serif";
+  font-weight: bold;
+}
 
 .preparation-time-container {
   background-color: hsl(330, 100%, 98%);
   border-radius: 7px;
   padding-left: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  /* margin: 20px; */
 }
 
 .preparation-time {
-  margin-top: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   margin-left: 10px;
   color: hsl(332, 51%, 32%);
+  font-family: "Outfit";
 }
 
 .preparation-list::marker {
@@ -94,7 +107,9 @@ span {
 .preparation-list {
   color: hsl(30, 10%, 34%);
   padding-left: 5px;
+  font-family: "Outfit";
 }
+
 
 .preparation-description {
   margin-top: 0;
@@ -103,25 +118,20 @@ span {
 .ingredients-list {
   color: hsl(30, 10%, 34%);
   padding-left: 5px;
-
+  font-family: "Outfit";
 }
 
 .ingredients-list::marker {
   color: hsl(332, 51%, 32%);
 }
 
-.ingredients,
-.instructions,
-.nutrition {
-  color: brown;
-  font-family: "Young serif" !important;
-  font-weight: bold;
-}
+
 
 
 .instruction-list {
   color: hsl(30, 10%, 34%);
   padding-left: 12px;
+  font-family: "Outfit";
 }
 
 .instruction-list::marker {
@@ -143,7 +153,8 @@ table {
   text-align: left;
   padding: 20px;
   border-bottom: 1px solid #ddd;
-  font-weight: normal;
+  font-family: "Outfit";
+  color: hsl(30, 10%, 34%);
 }
 
 .calories-value {
